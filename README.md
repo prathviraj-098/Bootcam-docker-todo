@@ -36,10 +36,6 @@
 
 ---
 
-## Challenges & fixes
-- Startup race between frontend and Postgres — addressed by using the `POSTGRES_HOST=db` env var and by waiting/retrying (e.g., `wait-port` or a healthcheck) before the app connects.
-
----
 
 ## What I learned
 - How to write a `Dockerfile` for a frontend, define services in `docker-compose.yml`, use named volumes for Postgres persistence, and verify/inspect running containers.
