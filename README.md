@@ -17,18 +17,22 @@
 ---
 
 ## Commands used
-```bash
-docker-compose build
-docker-compose up -d
-docker ps
-curl http://localhost:8000
-docker-compose logs -f frontend
-docker-compose exec frontend bash
-docker inspect <container_name>
-docker-compose down
-docker image prune -f
-docker system prune -f
-```
+- `docker-compose build` — Build the frontend image from the Dockerfile.
+- `docker-compose up -d` — Start frontend and db services in detached mode.
+- `docker ps` — List running containers.
+- `docker run` — Run a container from an image (used to run built images locally).
+- `docker stop` — Stop a running container.
+- `docker rm` — Remove a stopped container.
+- `docker images` — List all local images.
+- `docker rmi` — Remove a local image.
+- `docker logs` — View logs of a container.
+- `docker-compose logs -f frontend` — Follow frontend logs.
+- `docker-compose exec frontend bash` — Open a shell inside the frontend container.
+- `docker inspect <container_name>` — Inspect container details (network, mounts, etc.).
+- `docker-compose down` — Stop and remove services started by Compose.
+- `docker image prune -f` — Remove dangling images.
+- `docker system prune -f` — Clean up unused Docker resources.
+- `curl http://localhost:8000` — Verify the frontend is serving the app.
 
 ---
 
